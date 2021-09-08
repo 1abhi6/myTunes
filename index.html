@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <title>myTunes</title>
@@ -38,7 +39,7 @@
 
     <!-- Music Section -->
 
-    <section class="music" id="music_id">
+    <section class="music" id="music_id" data-aos='zoom-in'duration: 400>
         <div class="container music_container">
             <h2 class="section_head">
                 <i class="fas fa-music"></i> Music
@@ -58,7 +59,7 @@
 
     <!-- Video section -->
 
-    <section class="video_section container" id="video">
+    <section class="video_section container" id="video" data-aos="fade-up">
         <h1>The movie and TV collection you always wished for. Granted.</h1>
         <p>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes
             and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in
@@ -70,7 +71,7 @@
 
     <!-- Entertainment section  -->
 
-    <section class="entertainment container">
+    <section class="entertainment container" data-aos='fade-left'>
         <h1>A world of entertainment. Available wherever you are.</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus
             reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos
@@ -82,7 +83,7 @@
     <!-- Gift Card Section -->
 
 
-    <section id="gift_cards" class="bg_light container">
+    <section id="gift_cards" class="bg_light container" data-aos='fade-right'>
         <div class='gift_img'>
             <img src="images/cards.png" alt="cards">
         </div>
@@ -194,6 +195,16 @@
             Copyright &copy; 2021 Abhishek <a href="https://twitter.com/code_abhi" target='blank'>@code_abhi</a> 
         </div>
     </footer>
+
+
+    <!-- AOS Script for animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800
+      });
+    </script>
+  
 </body>
 
 </html>
