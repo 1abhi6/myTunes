@@ -33,6 +33,10 @@
 
 /* This area is for common styling */
 
+body{
+    overflow-x: hidden;
+}
+
 p{
     font-size: 1.3rem;
     text-align: center;
